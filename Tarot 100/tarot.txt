@@ -1,0 +1,100 @@
+Tarot Spreads 2005
+by Josef Chessor
+
+For the TRS-80 Model 100 Portable Computer
+
+Introduction
+
+     In studying programmer and hobbyist magazines from the 70s and 80s, I noticed that just about every 8- and 16-bit computer had some kind of Tarot program written for it.  Except for the Model 100.  
+
+     Considering how small and simple such a program essentially is, I figured that, while twenty years too late, it still wouldn't hurt to have a Tarot-reading program on a computer that's sized almost ideally for such things.
+
+     This document won't go into any nontechnical aspects of the Tarot deck.  It simply tells you what the options are, and what they do.  Further, the program is considered public domain.  Do with it what you like.
+
+Installation
+
+     Simply type the program in, or if you're more technically inclined, download it onto the Model 100 with a serial cable and use BASIC to turn the .DO file into an executable .BA file.
+
+Usage
+
+     There are three main menu options:
+
+     Celtic Cross - Shuffles the deck and lays the cards out in the classic ten-card cross pattern.
+
+     Star Gate - Much the same, only the ten cards are laid out differently.
+
+     Menu - Return to the Model 100's main menu.
+
+     Cards are shown in an abbreviated form.  The minor arcana are shown with their designation (A through 10, P through K) and their suit.  Major arcana have their whole names abbreviated.  See the end of the file for a complete list of major and minor arcana abbreviations.  A card that is inverted is shown with inverse video attributes.
+
+     After the cards on either layout are shuffled, the screen will show the cards, and two options:  Save, and Back.  
+
+     Back is pretty self-explanatory.  It returns the user to the program's main menu.
+
+     Save prompts for a filename, to save the spread's content to a file in memory.  Here is a sample saved spread:
+
+=======================================
+Celtic Cross Report
+Recorded on 02/13/05 at 01:25:18.
+=======================================
+The subject:		TSUN
+Subject's influence:	10ofS
+Far past:		CHAR (Rev)
+Near past:		STRE (Rev)
+Present:		5ofS
+Near future:		MOON (Rev)
+Subject's view:		3ofS
+Others' view:		QofS (Rev)
+Hopes and fears:	KofC (Rev)
+Final outcome:		2ofP
+=======================================
+
+Modification
+
+     The program's headings and screen layouts are performed all through items contained in the DATA statements in the rear.  Two series of ten numbers denote the PRINT@ locations of each card.  Two series of ten strings denote the output text for each position in a saved spread.  
+
+     Modifying the program is a simple task, provided you get the screen locations right.
+
+I hope you enjoy this program!
+Josef Chessor, May 2005
+
+Card Abbreviations:
+
+	Card Rank
+	A 	ACE
+	P	PAGE
+	N	KNIGHT
+	Q	QUEEN
+	K	KING
+
+	Card Suit
+	P	PENTACLES
+	C	CUPS
+	S	SWORDS
+	W 	WANDS
+
+	Major Arcana
+
+	MAGI	The Magician
+	HPRS	The High Priestess
+	EMPS	The Empress
+	EMPR	The Emperor
+	HIER	The Hierophant
+	LOVE	The Lovers
+	CHAR	The Chariot
+	STRE	Strength
+	HERM	The Hermit
+	WHEE	Wheel of Fortune
+	JUST	Justice
+	HANG	The Hanged Man
+	DEAT	Death
+	TEMP	Temperance
+	DEVI	The Devil
+	TOWE	The Tower
+	STAR	The Star
+	MOON	The Moon
+	TSUN	The Sun
+	JUDG	Judgement
+	WORL	The World
+	FOOL	The Fool
+
